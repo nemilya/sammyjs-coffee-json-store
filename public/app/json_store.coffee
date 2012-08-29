@@ -18,7 +18,6 @@
           item: item
         ).appendTo context.$element()
 
-
     @get "#/item/:id", (context) ->
       @item = @items[@params["id"]]
       return @notFound()  unless @item
@@ -49,7 +48,6 @@
       $(".cart-info").find(".cart-items").text(sum).end().animate(paddingTop: "30px").animate paddingTop: "10px"
 
     @bind "run", ->
-	      
       # initialize the cart display
       @trigger "update-cart"
   )
