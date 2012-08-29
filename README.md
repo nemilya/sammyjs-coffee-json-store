@@ -28,3 +28,8 @@ Thanks:
 * [CloudFoundry](http://cloudfoundry.com/)
 * [Ruby](http://www.ruby-lang.org/en/)
 * [Chrome](https://www.google.com/chrome/)
+
+And:
+
+* http://html2haml.heroku.com
+* http://js2coffee.org
