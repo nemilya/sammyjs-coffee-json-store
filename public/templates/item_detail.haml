@@ -1,0 +1,20 @@
+.item-detail
+  .item-image
+    %img{ alt: item.title, src: item.large_image}/
+  .item-info
+    .item-artist= item.artist
+    .item-title= item.title
+    .item-price
+      $#{item.price}
+    .item-form
+      %form{ action: "#/cart", method: "post"}
+        %input{ name: "item_id", type: "hidden", value: params['id']}/
+        %p
+          %label Quantity:
+          %input{ name: "quantity", size: "2", type: "text", value: "1"}/
+        %p
+          %input{ type: "submit", value: "Add to Cart"}/
+    .item-link
+      %a{ href: item.url} Buy this item on Amazon
+    .back-link
+      %a{ href: "#/"} « Back to Items

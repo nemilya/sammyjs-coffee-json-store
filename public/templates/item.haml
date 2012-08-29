@@ -1,0 +1,8 @@
+.item
+  .item-image
+    %a{ href: "#/item/#{id}"}
+      %img{ alt: item.title, src: item.image}/
+  .item-artist= item.artist
+  .item-title= item.title
+  .item-price
+    $#{item.price}

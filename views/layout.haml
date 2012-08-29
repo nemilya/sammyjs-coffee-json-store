@@ -1,0 +1,17 @@
+!!!
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title The JSON Store
+    %link{ :href => "stylesheets/jsonstore.css", :media => "screen", :rel => "stylesheet", :type => "text/css", :charset => "utf-8"}/
+  %body
+    = yield
+    %script{ :src => "javascripts/jquery.js", :type => "text/javascript", :charset => "utf-8" }
+    %script{ :src => "javascripts/haml.js", :type => "text/javascript", :charset => "utf-8" }
+    %script{ :src => "javascripts/sammy/sammy.js", :type => "text/javascript", :charset => "utf-8" }
+    %script{ :src => "javascripts/sammy/plugins/sammy.haml.js", :type => "text/javascript", :charset => "utf-8" }
+    %script{ :src => "javascripts/sammy/plugins/sammy.json.js", :type => "text/javascript", :charset => "utf-8" }
+    %script{ :src => "javascripts/sammy/plugins/sammy.storage.js", :type => "text/javascript", :charset => "utf-8" }
+
+    %script{ :src => "javascripts/coffee-script.js", :type => "text/javascript", :charset => "utf-8" }
+    %script{ :src => "app/json_store.coffee", :type => "text/coffeescript", :charset => "utf-8" }
