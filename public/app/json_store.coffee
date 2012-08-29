@@ -49,7 +49,7 @@
       $(".cart-info").find(".cart-items").text(sum).end().animate(paddingTop: "30px").animate paddingTop: "10px"
 
     @bind "run", ->
-      
+	      
       # initialize the cart display
       @trigger "update-cart"
   )
